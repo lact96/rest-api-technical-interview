@@ -49,6 +49,11 @@ LAPTOP = pk1
 http://127.0.0.1:8000/order_status/
 See how our order_status behaves *** Pending implementations to edit pending status automatically depending on the item status ***
 
+
+
+
+
+
 2.- Seasons Problem:
 You have a table containing a large number of orders over several years - a sample is
 shown below. Each order has a date attribute that you wlll need to use to determine the
@@ -56,11 +61,30 @@ season in which this order was placed. For reference see the table containing th
 in which each season falls.
 
 
-
 3.- Detecting Change:
 You have a table con1aining data on the weather. Each date has a boolean indicating if
 it rained (TRUE) or did not rain {FALSE). Query the lable to detennine the dates in
-which the weather be-carne bad (te. ,vtien the weather changed from FALSE to TRUE).
+which the weather becamne bad (Determine the weather changed from FALSE to TRUE).
 
+Available URLS for excercise and instructions to interact with API:
+
+
+http://127.0.0.1:8000/weather_list/
+
+{
+    "date": "2020-01-10",
+    "was_rainy": true
+}
+
+Api does not loop through the list to sort automatically, instead it will only check if the last 2 objects in the list are FALSE and TRUE. This
+If the new object == True and the previous object == False we will create a new instance as to when the weather turned bad.
+
+http://127.0.0.1:8000/weather/became_bad/
+lets manualy add the days that the weather became bad
+
+    {
+        "date": "yyyy-mm-dd",
+        "became_bad": true
+    }
 
 

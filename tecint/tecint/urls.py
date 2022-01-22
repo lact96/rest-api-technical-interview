@@ -18,8 +18,9 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #Added order urls.py 
+    #Added apps urls.py 
     path('', include('orders.urls')),
+    path('', include('changes.urls')),
     #added rest_auth urls.py
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
