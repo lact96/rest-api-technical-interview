@@ -21,6 +21,7 @@ urlpatterns = [
     #Added apps urls.py 
     path('', include('orders.urls')),
     path('', include('changes.urls')),
+    path('', include('seasons.urls')),
     #added rest_auth urls.py
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

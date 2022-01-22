@@ -60,6 +60,14 @@ shown below. Each order has a date attribute that you wlll need to use to determ
 season in which this order was placed. For reference see the table containing the dates
 in which each season falls.
 
+    {
+        "order_id": "12113-8909896-6940269",
+        "order_date": "2022-01-22",
+        "quantity_ordered": 1
+    }
+
+
+
 
 3.- Detecting Change:
 You have a table con1aining data on the weather. Each date has a boolean indicating if
@@ -88,3 +96,11 @@ lets manualy add the days that the weather became bad
     }
 
 
+PENDING ITEMS : 
+
+CREATE an Interactive FRONT-END using HTML5, Javascript and CSS
+
+ERROR HANDLING for non valid form submission
+at this time form will not submit
+
+User Registration
