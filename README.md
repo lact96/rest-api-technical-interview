@@ -22,10 +22,13 @@ the overall order status is Pending. 11 all are marked "Shipped" then the Status
 
 Available URLS for excercise and instructions to interact with API:
 http://127.0.0.1:8000/orders/
+
 Media Type: application/Json
+
     {
         "order_number": 1567
     }
+    
 http://127.0.0.1:8000/orders/<int:pk>/
 order_number: 1567 = pk: 1
 order_number: 1234 = pk: 2
@@ -35,6 +38,7 @@ order_number: 7654 = pk: 4
 http://127.0.0.1:8000/orders/items
 
 Media Type: application/Json
+
     {
         "order_number": pk
         "item_name": "string_value"
@@ -42,11 +46,13 @@ Media Type: application/Json
     }
 
 http://127.0.0.1:8000/orders/items/<int:pk>/
+
 KEYBOARD = pk:3
 MOUSE = pk:2
 LAPTOP = pk1
 
 http://127.0.0.1:8000/order_status/
+
 See how our order_status behaves *** Pending implementations to edit pending status automatically depending on the item status ***
 
 
